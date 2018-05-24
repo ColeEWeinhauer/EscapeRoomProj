@@ -16,12 +16,13 @@ public class escapeRoom {
 
     public static void main(String avg[]) throws IOException
     {
+        // set up JFrame
         JFrame frame=new JFrame();
         frame.setLayout(new FlowLayout());
-        frame.setSize(200,300);
-        String imageString = "C:\\Users\\Cole\\Desktop\\download.jpg";
-        displayImage(imageString, frame);
-
+        frame.setSize(1000,1620);
+        String fileString[] = new String[35];
+        fillFileString(fileString);
+        displayImage(fileString[5], frame);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -34,4 +35,12 @@ public class escapeRoom {
         label.setIcon(icon);
         frame.add(label);
     }
+
+    public static void fillFileString(String string[]){
+        for (int i=0; i<string.length; i++){
+            string[i]="C:\\Users\\Cole\\Desktop\\Card JPG\\card" + i + ".jpg";
+        }
+    }
+
+
 }
