@@ -22,7 +22,7 @@ public class escapeRoom {
         frame.setSize(1000,1620);
         String fileString[] = new String[35];
         fillFileString(fileString);
-        displayImage(fileString[5], frame);
+        displayImage(fileString[0], frame);
         frame.setVisible(true);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
